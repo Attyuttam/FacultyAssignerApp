@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAssignedList">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASSIGNED LIST"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/assigned_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heading"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FACULTY ID"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FACULTY NAME"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FACULTY DESIGNATION"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/heading4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ASSIGNED LIST"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/content_view_assigned_list"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>

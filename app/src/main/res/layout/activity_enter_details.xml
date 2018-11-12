@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="ENTER DETAILS"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Enter Name"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/enter_age"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Enter Age"
+            android:layout_weight="1"/>
+        <Button
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/button_background"
+            android:id="@+id/enter_qualifications"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Select Qualifications"
+            android:onClick="qualificationSelector"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:textColor="@color/White"
+            android:background="@drawable/button_background"
+            android:id="@+id/enter_subject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Select subjects"
+            android:onClick="subjectSelector"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/enter_years_experience"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Enter years of experience"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Select a designation"/>
+        <Spinner
+            android:id="@+id/enter_designation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+        <Button
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/button_background"
+            android:onClick="enterFacultyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/submit_button"
+            android:text="UPDATE AND ASSIGN"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+
+</RelativeLayout>

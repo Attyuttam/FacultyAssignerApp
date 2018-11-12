@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterNewSub">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="ENTER NEW SUBJECT"
+            android:layout_weight="1.5"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/subject_name"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Enter Subject Name"/>
+        <EditText
+            android:id="@+id/subject_credit_score"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Enter Credit Score"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Select Subject"/>
+            <Spinner
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_dropdown"
+                android:id="@+id/subject_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Course"/>
+
+        </LinearLayout>
+        <Button
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:onClick="enterNewSubject"
+            android:text="Submit"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"/>
+    </LinearLayout>
+</RelativeLayout>

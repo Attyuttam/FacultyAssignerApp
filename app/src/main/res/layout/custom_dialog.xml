@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:text="ENTER PRIORITIES"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_weight="6"
+            android:weightSum="2"
+            android:id="@+id/sub_priority"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <Button
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/button_background"
+            android:id="@+id/set_priorites_button"
+            android:layout_weight="20"
+            android:text="SET PRIORITIES"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

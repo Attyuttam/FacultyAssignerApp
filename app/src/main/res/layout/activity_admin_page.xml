@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="ADMIN PAGE"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_gravity="center"/>
+
+            <Button
+                android:background="@drawable/button_background"
+                android:text="ENTER NEW SUBJECT"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/enter_new_sub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+            <Button
+                android:background="@drawable/button_background"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:text="VIEW ASSIGNED LIST"
+                android:id="@+id/view_assigned_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <Button
+            android:background="@drawable/button_background"
+            android:onClick="adminRedirector"
+            android:theme="@style/AppTheme.Button"
+            android:text="VIEW SUBJECT LIST"
+            android:id="@+id/view_subject_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <Button
+            android:background="@drawable/button_background"
+            android:onClick="adminRedirector"
+            android:theme="@style/AppTheme.Button"
+            android:text="ENTER NEW DESIGNATION"
+            android:id="@+id/enter_new_designation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <Button
+                android:background="@drawable/button_background"
+                android:text="DELETE DESIGNATION"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/delete_designation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+            <Button
+                android:background="@drawable/button_background"
+                android:text="DELETE A SUBJECT"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/delete_sub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+            <Button
+                android:background="@drawable/button_background"
+                android:text="UPDATE SUBJECT"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/update_sub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+            <Button
+
+                android:background="@drawable/button_background"
+                android:text="UPDATE DESIGNATION"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/update_designation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+            <Button
+                android:background="@drawable/button_background"
+                android:text="ENTER NEW ADMIN"
+                android:onClick="adminRedirector"
+                android:theme="@style/AppTheme.Button"
+                android:id="@+id/enter_new_admin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+</RelativeLayout>
